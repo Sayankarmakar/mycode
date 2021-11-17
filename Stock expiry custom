@@ -1,4 +1,5 @@
-
+import os
+import math
 # import required libraries for dataframe and visualization
 
 import numpy as np
@@ -16,3 +17,8 @@ from sklearn.metrics import silhouette_score
 from scipy.cluster.hierarchy import linkage
 from scipy.cluster.hierarchy import dendrogram
 from scipy.cluster.hierarchy import cut_tree
+
+# Reading the data on which analysis needs to be done
+
+retail = pd.read_excel(r'D:/Programming/prog_docs/Online Retail.xlsx', sep=",", encoding="ISO-8859-1", header=0)
+retail.head()
